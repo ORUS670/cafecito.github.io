@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--primary-color: #c7a17a;
+	--background-color: #f9f5f0;
+	--dark-color: #151515;
+}
+
+
+body{
+    background-color: blanchedalmond;
+}
+ 
+.Titulo-1{
+    font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.card-product {
+	background-color: #fff;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.container-img {
+	position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* seleccion global de las clases controlas la altura y margen */
+
+ 
+.container-img img {
+	width: 30%;
+
+}
+
+
+/* Tintas del titulo de los MEJORES PRODUCTOS*/
+
+.heading-1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.top-products {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.container-options {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 1rem;
+}
+
+
+
+    /* baner internos de las opciones */
+    .container-options span {
+        color: #777;
+        background-color: #fff;
+        padding: 0.7rem 3rem;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+
+/* ilustracio de las opciones*/
+.container-options span:hover {
+	background-color: var(--primary-color);
+	color: #070707;
+}
+
+.container-options span.active {
+	background-color: var(--primary-color);
+	color: #000000;
+}
+
+/*///////////////////////////////////////*
+
+/* SECCION DE PRODUCTOS */
+
+.container-products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 3rem;
+}
+
+
+.card-product {
+    display: flex;
+	background-color: #ffffff;
+	padding: 2rem 3rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.container-img .discount {
+	position: absolute;
+	left: 0;
+	background-color: var(--primary-color);
+	color: #ededed;
+	padding: 2px 1.2rem;
+	border-radius: 1rem;
+	font-size: 1.2rem;
+}
+
+
+.card-product:hover .discount {
+	background-color: #1d1616;
+}
+
+
+.button-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	position: absolute;
+	top: 0;
+	right: -3rem;
+	z-index: -1;
+	transition: all 0.4s ease;
+}
+
+
+
+.button-group span:hover {
+	background-color: var(--primary-color);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Barista-GC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">3106586833</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="/">Barista-GC</a></h1>
+                </div>
+
+                <div class="container-user">
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(<span id="cart-count">0</span>)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Moca Helado.html">Moca Helado</a></li>
+                    <li><a href="Expreso.html">Expreso</a></li>
+                    <li><a href="#">Capuchino</a></li>
+                    <li><a href="#">Más</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="container cart-container">
+            <h1 class="heading-1">Tu Carrito de Compras</h1>
+            
+            <div class="cart-content">
+                <div class="cart-items" id="cart-items">
+                    <!-- Los productos se añadirán aquí dinámicamente -->
+                    <div class="empty-cart">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <p>Tu carrito está vacío</p>
+                        <a href="index.html" class="btn">Explorar productos</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Resumen de Compra</h3>
+                    <div class="summary-details">
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="shipping">
+                            <span>Envío:</span>
+                            <span id="shipping">$0.00</span>
+                        </div>
+                        <div class="total">
+                            <span>Total:</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                    </div>
+                    <button class="btn-checkout" id="checkout-btn">Proceder al Pago</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Mantén el mismo footer que en index.html -->
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>
